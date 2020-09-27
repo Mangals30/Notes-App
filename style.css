@@ -1,0 +1,123 @@
+* {
+
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box
+
+}
+body {
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  line-height : 1.7;
+  overflow: hidden;
+}
+
+a {
+color : #333;
+text-decoration : none
+}
+
+h1,h2,h3 {
+padding-bottom : 20px;
+}
+
+p {
+margin : 10px 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+}
+.header,footer {
+  color: #fff;
+  background: #9882b4 ;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  
+}
+input,select {
+  width: 100%;
+  padding: 4px;
+  height: 2.5rem;
+  border: #807878 solid 1px;
+  border-radius: 5px;
+  margin: 0.5rem 0;
+}
+textarea {
+  width: 100%;
+}
+input:focus,textarea:focus,select:focus {
+  outline-color: #9882b4;
+}
+
+#notes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#notes-element{
+  width: 20rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  padding: .5rem;
+}
+#notes-element button {
+  padding: 2px;
+  width: 4rem;
+  background: rgb(187, 114, 114);
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  margin-right: .5rem;
+}
+#notes-element button:hover{
+   background: rgb(83, 7, 7);
+}
+#add {
+  display: flex;
+  height: 5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+#add input {
+  width: 80%;
+  margin-right: 1rem;
+}
+#add button,#save-note,#remove-note,#home {
+  height: 2.5rem;
+  padding: 4px;
+  width: 5rem;
+  background: #9882b4;
+  color: #fff;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+#add button:hover,#save-note:hover,#remove-note:hover,#home:hover {
+  border: none;
+  outline: none;
+  background: #5b3d83;
+}
+#edit-heading {
+  text-align: center;
+}
+.header-button {
+  margin: 1rem;
+
+}

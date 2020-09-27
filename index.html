@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes App</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header">
+      <h1>Notes App</h1>
+    </div>
+    </header>
+    <main>
+      <h2>Take Notes and Never Forget</h2>
+      <input type="text" id="search-text" placeholder="Search Notes">
+      <select id="filter-by">
+        <option value="byEdited">Sort By Last Edited</option>
+        <option value="byCreated">Sort By Recently Created</option>
+        <option value="alphabetically">Sort Alphabetically</option>
+      </select>
+      <div id="notes"></div>
+      <div id="add">
+        <input type="text" name="addNotes" id="add-notes-input">
+        <button id="add-notes">Add Note</button>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <p>Copyrights&copy;2020, Mangalam Krishnan</p>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.28.0/moment-with-locales.min.js"></script>
+  <script src="./uuid.js"></script>
+  <script src="./notes-app.js"></script>
+  <script src="./main.js"></script>
+</body>
+</html>
